@@ -1,0 +1,59 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.contenedor
+{
+    width: 1200px;
+    padding: 15px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+h1
+{
+    text-align: center;
+}
+
+#reloj
+{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(44, 34, 138);
+    border-radius: 25px;
+    font-size: 60px;
+    text-align: center;
+    padding: 20px;
+    transition: 1000ms al linear;
+    animation-name:latir;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#hora
+{
+    height: 70%;
+}
+
+#reloj #fecha
+{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+@keyframes latir
+{
+    to
+    {
+       border: 3px solid rgba(0, 0, 0, 0.171);
+    }
+
+    from
+    {
+        border: 6px solid black;
+    }
+}
